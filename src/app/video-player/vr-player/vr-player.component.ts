@@ -25,6 +25,18 @@ export class VrPlayerComponent implements OnInit, AfterViewInit, OnDestroy {
   setUpVideoPlayer() {
     this.player = videojs(this.target.nativeElement, {});
 
+    this.player.panorama({
+      clickToToggle: true,
+      clickAndDrag: true,
+      autoMobileOrientation: true,
+      initFov: 100,
+      callback: function () {
+        if(this.player) {
+          this.player.play();
+        }
+      }
+    });
+
     this.player.src({
       src: this.videoOption.src,
       type: this.videoOption.type
