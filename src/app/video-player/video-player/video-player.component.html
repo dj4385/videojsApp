@@ -1,6 +1,10 @@
-<p>2D Video Player</p>
+<p>2D Video Player with subtitle</p>
 <div>
-    <video style="height: 300px; width: 550px; object-fit: cover;" #target class="video-js vjs-theme-forest" controls muted playsinline preload="none"></video>
+    <video style="height: 300px; width: 550px; object-fit: cover;" #target class="video-js vjs-theme-forest" controls
+        muted playsinline preload="none">
+        <track label="English" kind="subtitles" srclang="en"
+            [src]="videoOption.subTitleUrl" default />
+    </video>
 </div>
 
 <!-- theme classes 

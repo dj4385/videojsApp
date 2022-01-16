@@ -9,9 +9,9 @@ declare var videojs: any;
 })
 export class VideoPlayerComponent implements OnInit, AfterViewInit, OnDestroy {
   @ViewChild('target', {static: true}) target!: ElementRef;
-  @Input() videoOption!: {src: string, type: string};
+  @Input() videoOption!: {src: string,  type: string, subTitleUrl: string};
   player: any;
-  
+
   constructor() { }
 
   ngOnInit(): void {
