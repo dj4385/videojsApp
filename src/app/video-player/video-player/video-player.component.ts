@@ -30,30 +30,6 @@ export class VideoPlayerComponent implements OnInit, AfterViewInit, OnDestroy {
 
     this.player.ima(this.videoAdsOptions);
 
-    // this.player.ads();
-
-    // this.player.on('contentchanged', () => {
-    //   this.player.trigger('adsready');
-    // });
-
-    // this.player.on('readyforpreroll', () => {
-    //   this.player.ads.startLinearAdMode();
-    //   // play your linear ad content
-    
-    //   // send event when ad is playing to remove loading spinner
-    //   this.player.one('adplaying', () => {
-    //     this.player.trigger('ads-ad-started');
-    //   });
-    
-    //   // resume content when all your linear ads have finished
-    //   this.player.one('adended', () => {
-    //     this.player.ads.endLinearAdMode();
-    //   });
-    // });
-    
-    // // in a real plugin, you might fetch ad inventory here
-    // this.player.trigger('adsready');
-
     this.player.src({
       src: this.videoOption.src,
       type: this.videoOption.type
