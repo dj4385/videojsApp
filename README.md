@@ -1,4 +1,7 @@
 # VideojsApp
+![Screenshot from 2023-08-30 14-21-33](https://github.com/dj4385/videojsApp/assets/30724457/9b90b9ca-61be-4720-ad50-4f731e8102e8)
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
 
